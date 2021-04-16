@@ -1,0 +1,86 @@
+.loginWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;;
+    height: 100%;
+}
+.Login{
+    height: 100%;
+}
+.help{
+    margin-left: auto;
+}
+
+label{
+    color: grey;
+    font-weight: bold;
+}
+
+.loginWrapper input{
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0px solid;
+    
+    
+}
+.loginWrapper input[type=text]{
+    width:100%;
+    height: 60px;
+    background-color: lightgrey;
+
+}
+
+.loginWrapper input[type=password]{
+    width:100%;
+    height: 60px;
+    background-color: lightgrey;
+   
+}
+
+.loginWrapper input:focus{
+    border: 3px solid black;
+    background-color: white;
+}
+
+.loginWrapper label{
+    margin-right: auto;
+}
+.logo {
+    height: 5vmin;
+    width: 7vmin;
+    pointer-events: none;
+    margin-bottom: 5rem;
+}
+.signIn{
+    margin-top: 150px;
+    margin-bottom: 140px;
+}
+
+.secondary{
+    display: flex;
+    flex-direction: column;
+    color:grey;
+    position: absolute;
+    bottom: 60px;
+
+}
+.loginWrapper small{
+    position: absolute;
+    bottom: 45px;
+    color:grey;
+
+}
+
+.socialLogin{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}

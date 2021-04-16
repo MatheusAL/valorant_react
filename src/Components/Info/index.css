@@ -1,0 +1,16 @@
+.splash{
+    background-image: url(../../assets/splash2.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    
+}
+
+.settings{
+    position:absolute;
+    bottom: 55px;
+    right: 55px;
+    border-radius: 5px;
+    padding-right: 10px;
+    font-size: 30px;
+}
