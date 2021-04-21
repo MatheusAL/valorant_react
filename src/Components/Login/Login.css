@@ -10,9 +10,6 @@
     margin-top: 50px;;
     height: 100%;
 }
-.Login{
-    height: 100%;
-}
 .help{
     margin-left: auto;
 }
@@ -30,19 +27,6 @@ label{
     border: 0px solid;
     
     
-}
-.loginWrapper input[type=text]{
-    width:100%;
-    height: 60px;
-    background-color: lightgrey;
-
-}
-
-.loginWrapper input[type=password]{
-    width:100%;
-    height: 60px;
-    background-color: lightgrey;
-   
 }
 
 .loginWrapper input:focus{
