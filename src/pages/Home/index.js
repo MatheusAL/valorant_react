@@ -3,7 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
 import { HiOutlineCurrencyRupee } from 'react-icons/hi';
 import { RiSettings5Fill } from 'react-icons/ri';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { BiTimeFive } from 'react-icons/bi';
 import Background from '../../assets/home_background.jpeg';
+
 const useStyles = makeStyles((theme) => ({
     home: {
         backgroundImage: `url(${Background})`,
@@ -68,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     },
     menuRight:{
         display:"flex",
-        fontSize: "24px",
+        fontSize: "22px",
         justifyContent: "flex-end",
         alignItems: "center",
         width: "100%",
@@ -76,10 +79,11 @@ const useStyles = makeStyles((theme) => ({
     },
     menuLeft:{
         display:"flex",
-        fontSize: "24px",
+        fontSize: "22px",
         justifyContent: "flex-start",
         alignItems: "center",
         width: "100%",
+        paddingLeft: "20px",
     },
     storeItem:{
         display: "block",
@@ -88,7 +92,6 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "36px",
         color: "white",
         textDecoration: "none",
-        fontWeight: "bold",
     },
 }));
 
@@ -99,9 +102,10 @@ function Home(){
             <div className={classes.menu}>
                 <div className={classes.menuLeft}>
                     <HiOutlineCurrencyRupee />
-                    <HiOutlineCurrencyRupee />
+                    <GiHamburgerMenu />
                 </div>
                 <div className={classes.menuCenter}>
+                    <div className={classes.menuItem} ><BiTimeFive /></div>
                     <a className={classes.menuItem} href="#home">Home</a>
                     <a className={classes.menuItem} href="#news">Collection</a>
                     <div className={classes.menuItem}>
@@ -113,8 +117,8 @@ function Home(){
                     </div>
                     <a className={classes.menuItem} href="#contact">Career</a>
                     <a className={classes.menuItem} href="#contact">Store</a>
-                    <a className={classes.storeItem} href="#"><HiOutlineCurrencyRupee /></a>
-                    <a className={classes.storeItem} href="#"><HiOutlineCurrencyRupee /></a>
+                    <a className={classes.storeItem} href="#a"><HiOutlineCurrencyRupee /></a>
+                    <a className={classes.storeItem} href="#s"><HiOutlineCurrencyRupee /></a>
                 </div>
 
                 <div className={classes.menuRight}>
