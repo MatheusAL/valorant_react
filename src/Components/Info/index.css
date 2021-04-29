@@ -14,3 +14,7 @@
     padding-right: 10px;
     font-size: 30px;
 }
+
+.settings button:hover{
+    opacity: .5;
+}

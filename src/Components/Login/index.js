@@ -1,6 +1,6 @@
 import React from 'react';
 import styled , { css } from 'styled-components';
-import './Login.css';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 import SocialButton from '../SocialButton';
 import FormField from '../FormField';
@@ -8,6 +8,7 @@ import logo from '../../assets/valorant-logo.png';
 import IconLarge from '../Button/IconLarge';
 import useForm from '../../hooks/useForm';
 import HelpIcon from '../Button/HelpIcon';
+import './Login.css';
 
 const Input =  styled.input`
   
@@ -21,12 +22,6 @@ const Input =  styled.input`
 
 function Login() {
   //remember to create another icon component
-  /*const { handleChange, values } = useForm({
-    titulo: '',
-    url: '',
-    categoria: '',
-  });*/  
-  //const hasValue = Boolean(value.length);
   const { handleChange, values } = useForm({
     login: '',
     senha: '',
@@ -58,9 +53,13 @@ function Login() {
             Stay signed in
         </label>
         <div className="signIn">
-          <Button>
-            <IconLarge />
-          </Button>
+          <Link to="/home">
+            <Button>
+            
+              <IconLarge />
+            
+            </Button>
+          </Link>
         </div>
         <div className="secondary">
           <b>CAN'T SIGN IN?</b>

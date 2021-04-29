@@ -1,6 +1,5 @@
 import { AiFillQuestionCircle } from 'react-icons/ai';
 import { IconContext } from "react-icons";
-import { grey } from '@material-ui/core/colors';
 
 function HelpIcon() {
     return (

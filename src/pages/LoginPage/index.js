@@ -19,10 +19,10 @@ function LoginPage(){
             spacing={0}
             className={classes.root}
         >
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
                 <Login />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
                 <Info />
             </Grid>
         </Grid>
